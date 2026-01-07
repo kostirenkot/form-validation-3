@@ -1,3 +1,65 @@
-body { font-family: Arial; padding: 20px; }
-input, button { padding: 6px; margin: 4px 0; }
-#message { color: red; font-weight: bold; }
+/* Вирівнювання сторінки по центру */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* по горизонталі */
+    align-items: center;     /* по вертикалі */
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f0; /* світло-зелений фон */
+}
+
+/* Контейнер форми */
+form#registerForm {
+    background-color: #ffffff; /* білий фон */
+    padding: 30px 40px;
+    border-radius: 15px;      /* округлі кути */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* тінь */
+    display: flex;
+    flex-direction: column;   /* поля вертикально */
+    gap: 15px;                /* відстань між полями та кнопкою */
+    width: 320px;
+    box-sizing: border-box;
+}
+
+/* Заголовок форми */
+form#registerForm h2 {
+    text-align: center;
+    margin: 0 0 10px 0;
+    color: #2e7d32; /* темно-зелений */
+}
+
+/* Поля вводу */
+form#registerForm input {
+    padding: 10px 15px;
+    border-radius: 10px;      /* округлі поля */
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    width: 100%;               /* займає всю ширину контейнера */
+    box-sizing: border-box;
+}
+
+/* Кнопка відправки */
+form#registerForm button {
+    padding: 12px;
+    border-radius: 25px;      /* округла кнопка */
+    border: none;
+    background-color: #a8d5a2; /* світло-зелена */
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* При наведенні на кнопку */
+form#registerForm button:hover {
+    background-color: #7fb977; /* трохи темніший зелений */
+}
+
+/* Повідомлення про помилку або успіх */
+#message {
+    text-align: center;
+    font-size: 14px;
+    color: red; /* за замовчуванням червоний */
+    margin-top: 5px;
+}
